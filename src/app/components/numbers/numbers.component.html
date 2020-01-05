@@ -1,0 +1,23 @@
+<div id="numbers-main">
+    <div id="number-input">
+        <p>{{dialednumber}}</p>
+    </div>
+
+    <div id="clear-button" (click)='backspace()'>
+        <mat-icon>backspace</mat-icon>
+    </div>
+
+
+    <div class="pad-button" *ngFor='let number of dialpadNumbers'>
+        <button class="dialpad-button" mat-button (click)='dialNumber(number)'>
+            <p class="number">{{number.number}}</p>
+            <p class="value">{{number.values}}</p>
+        </button>
+    </div>
+
+    <div id="call-button">
+        <button mat-fab (click)='callhero()'>
+            <mat-icon>call</mat-icon>
+        </button>
+    </div>
+</div>

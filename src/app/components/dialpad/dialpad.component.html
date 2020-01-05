@@ -1,0 +1,12 @@
+<div id="main-container">
+    <div id="phone-container">
+        <div id="screen">
+            <app-screen [message]='superhero'></app-screen>
+        </div>
+        <div id="pad">
+            <app-numbers (callinghero)="callhero($event)"></app-numbers>
+        </div>
+
+    </div>
+
+</div>

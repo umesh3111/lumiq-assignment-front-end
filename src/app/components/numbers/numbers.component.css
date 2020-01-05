@@ -1,0 +1,58 @@
+#numbers-main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.pad-button{
+    width: 30%;
+    height: 10vh;
+}
+
+.dialpad-button{
+    width:100%;
+    height:100%;
+}
+
+.number{
+    padding-bottom:0px;
+    margin-bottom:0px;
+    font-size: 200%;
+}
+
+.value{
+    margin: 0px;
+    color: gray;
+}
+
+#number-input{
+    width:80%;
+    margin-top:5px;
+    height:40px;
+    text-align: center;
+}
+
+#clear-button{
+    width:15%;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    cursor: pointer;
+}
+
+:host>>>.mat-input-element{
+    text-align:center;
+}
+
+#call-button{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
+
+#call-button button{
+    background-color: #28de47;
+    color: white;
+}
